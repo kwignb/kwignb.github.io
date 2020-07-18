@@ -1,24 +1,15 @@
 html{
     font-size: 62.5%;
-    font-family: 
-    'Avenir'
-    "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
 }
 
 body{
     background-color: #FFFFF;
     color: #333;
-    
+    margin: 0;
 }
 
 .image-desc{
     align-items: center;
-    border-bottom: solid 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 0 rgba(255, 255, 255, 1);
     display: flex;
     -webkit-justify-content: center;
@@ -27,7 +18,7 @@ body{
     -o-justify-content: center;
     justify-content: center;
     margin: 4.6rem 0 3.2rem 0;
-    padding: 4.6rem 0 3.2rem 0;
+    padding: 4.6rem 0 1.2rem 0;
 }
 
 .image-desc--img{
@@ -62,7 +53,7 @@ body{
 }
 
 .info--heading{
-    border-left: solid 5px #1559B3;
+/*    border-left: solid 5px #1559B3;*/
     font-size: 2.5rem;
     height: 3.2rem;
     line-height: 3.2rem;
@@ -74,7 +65,7 @@ body{
 .info--heading2 {
     font-size: 2.4rem;
     font-weight: 600;
-    margin: 2rem 0 1.8rem 0;
+    margin: 2rem 0 1.8rem 0.5rem;
 }
 
 .info--heading3 {
@@ -83,58 +74,86 @@ body{
     margin: 0 0 1rem 0;
 }
 
-/*
 .navi {
-    align-items: center;
-    background: white;
-    border-bottom: 2px solid #006600;
-    display: flex;
-    left: 0;
-    right: 100px;
-    height: 4rem;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0 3rem 4rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-*/
-.navi{
     border-bottom: 2px solid #1559B3;
     position: fixed;
     z-index: 999;
     list-style-type: none;
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     min-width: 100vw;
     left: 0;
-    right: 200px;
+    padding-top:17px;
+    padding-bottom:15px;
     background: #fff;
+    margin-block-start: 0;
 }
 
+.language {
+    border: 1px solid #1559B3;
+    border-radius: 15px;
+    padding: 6px 11px 6px 11px;
+    background: #1559B3;
+    color: #fff !important;
+    box-shadow: 5px 5px;
+}
 
-.footer{
-    margin-top:65px;
+.footer {
+    margin-top:30px;
 }
 
 .navi--item {
     color: #1559B3;
     font-weight: 600;
     margin-right: 8rem;
-    margin-left: -5rem;
     text-decoration: none;
 }
 
 .common {
-  align-items: center;
-  display: flex;
-  color: #333333;
-  flex-flow: column nowrap;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  justify-content: center;
-  line-height: 2rem;
+    align-items: center;
+    display: flex;
+    color: #333333;
+    flex-flow: column nowrap;
+    font-family: 'Vollkorn';
+                 "Lora",
+                 "Helvetica Neue",
+                 Arial,
+                 "Hiragino Kaku Gothic ProN",
+                 "Hiragino Sans",
+                 Meiryo,
+                 sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+.heading{
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #1559B3;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+    width: ;
+}
+
+.bold{
+    font-weight: bold !important;
+}
+
+table td{
+    padding: 0px 3px;
+}
+
+table td:nth-last-of-type(3){
+    padding-left: 5px;
+}
+
+tr td:nth-last-of-type(1){
+    padding-left: 3px;
+}
+
+.title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 200%;
 }
